@@ -1,0 +1,71 @@
+.audio__list {
+    padding: 5px 20px;
+}
+.audio__title {
+   color: #f1f1f1;
+   font-size: 18px;
+}
+.audio__title span{
+   color: #848484;
+   font-size: 14px;
+}
+
+.songsContainer {
+    height: 232px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.songs {
+   display: flex;
+   align-items: center;
+   font-size: 14px;
+   font-weight: 600;
+   color: #848484;
+   width: 100%;
+   margin: 1rem 0;
+}
+.songs:hover, .active {
+   color: #f1f1f1;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+.img__box {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    border-radius: 0.5rem;
+    background-color: #848484;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+.img__box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.song__name {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.hits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hits p{
+    margin-right: 18px;
+}

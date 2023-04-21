@@ -1,0 +1,167 @@
+.main__menu {
+    
+
+    height: 100vh;
+    flex-grow: 1;
+    background-color: rgba(34, 34, 34, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+/* ======= BANNER ======== */
+
+.banner{
+    position: relative;
+    height: 250px;
+}
+.banner__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backdrop-filter: grayscale(100);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    
+    
+}
+.banner .bottom__layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.9));
+}
+
+/* ====== END OF BANNER ====== */
+
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+.breadCramp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.breadCramp i{
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.breadCramp p {
+    color: #848484;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.breadCramp p span {
+    color: #f1f1f1;
+}
+
+/* =========== ARTIST SECTION ========= */
+
+.artist {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f1f1f1;
+}
+.check__check{
+    color: rgb(52, 119, 226);
+    font-size: 20px;
+    margin-left: 10px;
+}
+.name {
+    display: flex;
+    align-items: center;
+}
+.name h2{
+    display: flex;
+    align-items: center;
+    color: #848484;
+   margin-left: 12px;
+   font-size: 15px;
+}
+.left p{
+    font-size: 25px;
+    
+}
+.left p i{
+    margin-right: 12px;
+    font-size: 16px;
+    color: rgb(30, 223, 9);
+}
+
+
+
+/* ========= RIGHT ========== */
+
+.right {
+    display: flex;
+    align-items: center;
+}
+.right a{
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #f1f1f1;
+    display: flex;
+    font-size: 21px;
+    margin: 7px;
+    border-radius: 100vh;
+    border: 1px solid #848484;
+}
+.right a:nth-child(1){
+    background-color: rgb(30, 223, 9);
+}
+.right a:nth-child(1):hover{
+    background-color: #f1f1f1;
+    color: black;
+}
+.right a:nth-child(2){
+    background-color: rgba(34, 34, 34, 0.6);
+}
+.right a:nth-child(2):hover{
+    background-color: #f1f1f1;
+    color: black;
+}
+.right a:nth-child(2) i{
+    font-weight: 100;
+    margin-right: 12px;
+}
+
+
+/* ========  menulist section ========== */
+.menulist {
+    width: 100%;
+    height: 55px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #848484;
+}
+.menulist ul{
+    display: flex;
+}
+.menulist ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+.menulist ul li a{
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #f1f1f1;
+}
+.menulist ul li a:hover{
+    color: rgb(30, 223, 9);
+}

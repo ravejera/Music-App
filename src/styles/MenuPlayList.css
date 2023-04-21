@@ -1,0 +1,48 @@
+.playlist__container {
+    cursor: pointer;
+    margin-top: 19px;
+}
+.name__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 1rem;
+    color: #aaaaaa;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.name__container i {
+    cursor: pointer;
+    color: #f1f1f1;
+}
+.playlist__scroll {
+    height: 100px;
+    /* background-color: rebeccapurple; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+.playlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 1rem;
+    color: #aaaaaa;
+}
+.playlist:hover {
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+.list {
+    margin-right: 10px;
+}
+/* .trash {
+    margin: auto;
+} */
+.playlist p {
+    font-size: 12px;
+    text-overflow: ellipsis; /* Here besically we're ading something like this "music...." to avoid overflow in a text */
+    overflow: hidden;
+    display: inline;
+}
