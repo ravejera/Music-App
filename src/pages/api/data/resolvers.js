@@ -8,7 +8,7 @@ const client = new Client({
   },
   auth: {
     username: "elastic",
-    password: "hrC5kEdzZ*Ej3v+GeZ0B",
+    password: "REPLACE WITH ELASTIC INSTNCE PAASWORD",
   },
 });
 
