@@ -1,0 +1,65 @@
+.album {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown;  */
+    background: rgb(34, 34, 34, 0.6);
+    backdrop-filter: blur(10px);
+}
+.album__body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow: scroll;
+    
+}
+.album__title {
+    color: #f1f1f1;
+    font-size: 20px;
+    margin: 5px 5px;
+}
+
+
+/* styling the single song */
+.album_single_song {
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* background: rgba(46, 43, 43, 0.6);
+    backdrop-filter: blur(10px); */
+    border-radius: 12px;
+    color: #a0a0a0;
+    border-top: 2px solid #a0a0a0;
+    height: 80px;
+    
+}
+.album_single_song:hover {
+    color: #f1f1f1;
+}
+/* .song__image {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #a0a0a0;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+} */
+
+
+.album__image {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+}
+.song__image {
+    margin-right: 1rem;
+}

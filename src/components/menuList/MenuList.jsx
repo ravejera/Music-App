@@ -9,17 +9,20 @@ const MenuList = [
     {
         id:1,
         icon: <BsFillHouseFill />,
-        name: "Home"
+        name: "Home",
+        path: '/'
     },
     {
         id:2,
         icon:<FaMusic/>,
-        name: "Songs"
+        name: "Songs",
+        path: '#'
     },
     {
         id:3,
         icon:<BsJournalAlbum/>,
-        name: "Album"
+        name: "Album",
+        path: '#'
     },
 
 ]

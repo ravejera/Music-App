@@ -1,33 +1,29 @@
-import React from 'react'
-import {  FaHeadphones  } from "react-icons/fa"
+import React from "react";
+import { FaHeadphones } from "react-icons/fa";
 
-
-// import Image1 from "../assets/pexels-bryan-catota-3756766.jpeg"
-
-
-const Banner = () => {
+const Banner = ({ album }) => {
   return (
-    <div className='banner'>
-        <img src="/assets/pexels-bryan-catota-3756766.jpeg" alt="" className='banner__img'/>
-        <div className="content">
-            {/* <div className="breadCramp">
-                <p>Home <span>/Popular Artist</span></p>
-                <i> <FaEllipsisH /></i>
-            </div> */}
-
-            <div className="artist">
-                <div className="left">
-                    <div className="name">
-                        <h2>playlist</h2>
-                     
-                    </div>
-                    <p><i><FaHeadphones /></i>monthly listeners</p>
-                </div>
-            </div>
+    <div className="banner">
+      <img
+        src="/assets/pexels-bryan-catota-3756766.jpeg"
+        alt=""
+        className="banner__img"
+      />
+      <div className="content">
+        <div className="artist">
+          <div className="left">
+            <p>
+              <i>
+                <FaHeadphones />
+              </i>
+              {album?.name || "Albums"}
+            </p>
+          </div>
         </div>
-        <div className="bottom__layer"></div>
-    </div> 
-  )
-}
+      </div>
+      <div className="bottom__layer"></div>
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;

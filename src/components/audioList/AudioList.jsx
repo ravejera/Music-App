@@ -1,155 +1,38 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-const AudioList = () => {
-    return (
-        <div className='audio__list'>
-            <p className="audio__title">
-                The list
-                <span> 12 songs</span>
-            </p>
-            {/* ============== MAPPING OF THE SONGS FROM BACKED ================ */}
-            <div className="songsContainer">
-                {/* START */}
-                <div className="songs">
-                    <div className="song">
-                        <div className="img__box">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="section">
-                            <p className='song__name'>
-                                love yourself
-                                <span> Artist</span>
-                            </p>
-                            <div className="hits">
-                                <p className="duration">
-                                    3.42
-                                </p>
-                                {/* <div className="favourite">
-                                    <i><FaHeart /></i>
-                                </div> */}
-                            </div>
-                        </div>
+const AudioList = ({ albums }) => {
+  return (
+    <div className="audio__list">
+      <p className="audio__title">Albums</p>
+      <div className="songsContainer">
+        {/* START */}
+        {albums.length &&
+          albums.map((album) => {
+            const { images, name, total_tracks, album_type, id } = album;
+            const image = images[0];
+            return (
+              <Link key={album.id} href={`/album/${id}`} className="songs">
+                <div className="song">
+                  <div className="img__box">
+                    <img src={image.url} alt="" />
+                  </div>
+                  <div className="section">
+                    <p className="song__name">
+                      {name}
+                      <span> {album_type}</span>
+                    </p>
+                    <div className="hits">
+                      <p className="duration">{total_tracks}</p>
                     </div>
+                  </div>
                 </div>
-                {/* END */}
-                {/* START */}
-                <div className="songs">
-                    <div className="song">
-                        <div className="img__box">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="section">
-                            <p className='song__name'>
-                                love yourself
-                                <span> Artist</span>
-                            </p>
-                            <div className="hits">
-                                <p className="duration">
-                                    3.42
-                                </p>
-                                {/* <div className="favourite">
-                                    <i><FaHeart /></i>
-                                </div> */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* END */}
-                {/* START */}
-                <div className="songs">
-                    <div className="song">
-                        <div className="img__box">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="section">
-                            <p className='song__name'>
-                                love yourself
-                                <span> Artist</span>
-                            </p>
-                            <div className="hits">
-                                <p className="duration">
-                                    3.42
-                                </p>
-                                {/* <div className="favourite">
-                                    <i><FaHeart /></i>
-                                </div> */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* END */}
-                {/* START */}
-                <div className="songs">
-                    <div className="song">
-                        <div className="img__box">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="section">
-                            <p className='song__name'>
-                                love yourself
-                                <span> Artist</span>
-                            </p>
-                            <div className="hits">
-                                <p className="duration">
-                                    3.42
-                                </p>
-                                {/* <div className="favourite">
-                                    <i><FaHeart /></i>
-                                </div> */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* END */}
-                {/* START */}
-                <div className="songs">
-                    <div className="song">
-                        <div className="img__box">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="section">
-                            <p className='song__name'>
-                                love yourself
-                                <span> Artist</span>
-                            </p>
-                            <div className="hits">
-                                <p className="duration">
-                                    3.42
-                                </p>
-                                {/* <div className="favourite">
-                                    <i><FaHeart /></i>
-                                </div> */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* END */}
-                {/* START */}
-                <div className="songs">
-                    <div className="song">
-                        <div className="img__box">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="section">
-                            <p className='song__name'>
-                                love yourself
-                                <span> Artist</span>
-                            </p>
-                            <div className="hits">
-                                <p className="duration">
-                                    3.42
-                                </p>
-                                {/* <div className="favourite">
-                                    <i><FaHeart /></i>
-                                </div> */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* END */}
-            </div>
-        </div>
-    )
-}
+              </Link>
+            );
+          })}
+      </div>
+    </div>
+  );
+};
 
-export default AudioList
+export default AudioList;

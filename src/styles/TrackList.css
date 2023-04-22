@@ -1,8 +1,8 @@
 .tracklist {
     margin-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
-    flex-grow: 1;
+    padding: 20px;
+    /* flex-grow: 1; */
 }
 .top {
     display: flex;
@@ -35,7 +35,7 @@
     color: #f1f1f1;
     transition: 0.3s;
 }
-.bottom input {
+/* .bottom input { */
     /* height: 5px;
     outline: none;
     border: none;
@@ -44,12 +44,12 @@
     color: rgb(30, 223, 9);
     border-radius: 5px;
     position: relative; */
-}
+/* } */
 
 
 /* chrome and safari */
 
-.bottom input::before {
+/* .bottom input::before { */
     /* content: "";
     position: absolute;
     background: rgb(30, 223, 9);
@@ -61,8 +61,8 @@
     border-radius: 5px;
     z-index: 2;
     transition: width 250ms linear; */
-}
-.bottom ::-webkit-slider-thumb{
+/* }
+.bottom ::-webkit-slider-thumb{ */
     /* -webkit-appearance: none;
     width: 13px;
     height: 13px;
@@ -73,7 +73,7 @@
     z-index: 9;
     margin: -2px 0 0 0;
     transition: all 250ms linear; */
-}
+/* } */
 
 
 

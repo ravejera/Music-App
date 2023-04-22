@@ -7,6 +7,9 @@
     padding: 25px, 30px;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .logo__container {
     display: flex;
@@ -52,6 +55,37 @@
     left: 0.6rem;
     font-size: 18px;
     color: #848484;
+}
+.search__list {
+    width: 90%;
+    height: 10vh auto;
+    background-color: #f1f1f1;
+    margin: auto;
+    border-radius: 12px;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+    background-color: #767070;
+    margin-top: 1rem;
+    display: none;
+    position: absolute;
+    margin-left: 1rem;
+    z-index: 188;
+}
+.each_search_list {
+    width: 90%;
+    height: 30px;
+    border-radius: 12px;
+    margin: 0.5rem;
+}
+.each_search_list:hover {
+    background-color: rgb(34, 34, 34, 0.6);
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.each_search_list a {
+    text-decoration: none;
+    color: #f1f1f1;
+    margin: 10px;
 }
 
 /* ========== ALL SMALL SCREEN ON THE LEFT SIDE ============ */
